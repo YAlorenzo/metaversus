@@ -105,3 +105,42 @@
   background: #65c4fa;
   filter: blur(150px);
 }
+.inputBlock{
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+.inputHidden{
+  opacity: 0;
+}
+.input{
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  padding: 5px;
+  border-bottom: 2px solid white;
+}
+.animationInput{
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+}
+.activeInput{
+  transform: translateX(210px);
+}
+.menuBlock{
+  animation: slideIn 500ms ease-in-out both;
+}
+.menuHidden{
+  display: none;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(200px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
